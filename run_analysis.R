@@ -1,4 +1,4 @@
-# Data Science Specialisation - Getting & Cleaning Data - Course Project
+# Data Science Specialisation - Getting & Cleaning Data - Course Project - Feb 2015
 #
 # Name:         run_analysis.R
 # Purpose:      Perform processing, and generation of tidy data sets from UCI HAR base datasets
