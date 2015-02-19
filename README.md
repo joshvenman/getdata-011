@@ -14,7 +14,8 @@ This script performs the processing and analysis required to create the final da
 - The **tidyr** package is installed
 - The **data.table** package is installed
 - The getdata-projectfiles-UCI HAR Dataset.zip containing the data for the project has been unzipped in to the working directory where this script is run from, creating a sub-folder called **UCI HAR Dataset** that contains all the component files.
- 
+- That measurements on the mean and standard deviation for each measurement are those with -std()- or -mean()- in their name.
+- That the descriptive names for activities are those found in the activity_labels.txt file. 
 
 The script performs the following functions:-
 
@@ -49,3 +50,20 @@ A complete description of the contents of the file can be found in the CodeBook.
 
 This file provides detailed metadata describing the contents of the file, datTidyFinal_HAR.txt
 
+### Is the data Tidy?
+
+The data in the file daTidyFinal_HAR.txt is believed to be tidy based on the assertion that:-
+
+- It has one variable per column
+- It includes descriptive, human-readable column names
+- It has one type of data in the file
+- It has one observation per row
+
+
+### Acknowledgements
+
+
+
+[David's Course Project FAQ, David Hood, posted 3rd Feb 2015](https://class.coursera.org/getdata-011/forum/thread?thread_id=69#post-249 "David's Course Project FAQ, David Hood, posted 3rd Feb 2015")
+
+[Tidy Data, Hadley Wickham, Journal of Statistical Software, Vol. 59, Issue 10, Sep 2014](http://www.jstatsoft.org/v59/i10/paper "Tidy Data, Hadley Wickham, Journal of Statistical Software, Vol. 59, Issue 10, Sep 2014")
