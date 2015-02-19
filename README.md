@@ -9,23 +9,45 @@ The script, data file and code book represent the submission for the course proj
 ##### README.md
 This file
 ##### run_analysis.R
-In this example we introduce the `<<-` operator which can be used to
-assign a value to an object in an environment that is different from the
+This script performs the processing and analysis required to create the final dataset that forms part of this submission. It requires no input parameters, but does make the following assumptions:-
+
+- The **tidyr** package is installed
+- The **data.table** package is installed
+- The getdata-projectfiles-UCI HAR Dataset.zip containing the data for the project has been unzipped in to the working directory where this script is run from, creating a sub-folder called **UCI HAR Dataset** that contains all the component files.
+ 
+
+The script performs the following functions:-
+
+1. Reads the component files for the training, test and related data
+1. Merges the training and the test sets to create one data set.
+1. Extracts only the measurements on the mean and standard deviation for each measurement. 
+1. Uses descriptive activity names to name the activities in the data set
+1. Appropriately labels the data set with descriptive variable names. 
+1. From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+The output from the script is written to two files:-
+
+
+
+- **datCombined_HAR.txt** tidy version of complete training and test datasets
+
+
+- **datTidyFinal_HAR.txt** tidy dataset as required for submission containing the average of each variable for each activity and each subject
+
+
 
 ##### datTidyFinal_HAR.txt
 
-current environment. Below are two functions that are used to create a
-special object that stores a numeric vector and caches its mean.
+The file contains the required tidy data set containing 
+the average of each variable for each activity and each subject. It was written using the write.table function with row.names=FALSE and can be read back in to R using the following statement (assuming the file is in the working directory):-
+
+*read.table(file="datTidyFinal_HAR.txt")*
+
+A complete description of the contents of the file can be found in the CodeBook.md file in this repository
 
 ##### CodeBook.md
 
-This text file is the result of Step 4 of the project where
-
-Matrix inversion is usually a costly computation and there may be some
-benefit to caching the inverse of a matrix rather than computing it
-repeatedly (there are also alternatives to matrix inversion that we will
-not discuss here). Your assignment is to write a pair of functions that
-cache the inverse of a matrix.
+This file provides detailed metadata describing the contents of the file, datTidyFinal_HAR.txt
 
 ### Understanding these resources
 
