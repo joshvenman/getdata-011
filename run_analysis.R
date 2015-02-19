@@ -1,4 +1,4 @@
-# Data Science Specialisation - Getting & Cleaning Data - Course Project - Feb 2015
+# Data Science Specialisation - Getting & Cleaning Data - Course Project
 #
 # Name:         run_analysis.R
 # Purpose:      Perform processing, and generation of tidy data sets from UCI HAR base datasets
@@ -42,7 +42,7 @@ prettyColNames <- function(df) {
 
 processHARData <- function(dataType) {
         # Function to pre-process the UCI HAR test and training datasets. The function takes one argument
-        # which is the type of dataset - trainig or test. It returns a processed dataframe
+        # which is the type of dataset - training or test. It returns a processed dataframe
         # based on the specified type of input data
         #
         # The data is spread across 
@@ -129,7 +129,7 @@ generateTidyData <- function(df) {
                 varMeans <- gather(varMeans,variable,var,-activity,-subject)
                 
                 # Set generic column names
-                colnames(varMeans) = c("SubjectId","ActivityType","VariableName","MeanValue")
+                colnames(varMeans) = c("SubjectId","ActivityType","Measurement","MeanValue")
                 
                 # And add to the final dataset
                 if (!exists("finalData")) {
