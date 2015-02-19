@@ -1,4 +1,4 @@
-### Code Book - datTidyFinal_HAR.txt
+### Code Book - datTidyFinal_HAR.txt 
 
 This code book describe the data in the file datTidyFinal_HAR.txt that was created as part of the submission for the Coursera Getting & Cleaning Data course that forms part of the Data Science Specialisation.
 

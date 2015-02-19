@@ -166,9 +166,4 @@ datTidy <- generateTidyData(datCombined)
 write.table(datTidy,file="datTidyFinal_HAR.txt",row.names=FALSE)
 
 
-## TODO Create  a link to a Github repository with your script for performing the analysis
-
-## TODO Create a code book for the data
-
-## TODO Create a README.md file to explain the scripts, data etc
 
