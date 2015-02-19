@@ -1,4 +1,4 @@
-"SubjectId" "ActivityType" "VariableName" "MeanValue"
+"SubjectId" "ActivityType" "Measurement" "MeanValue"
 1 "LAYING" "tBodyAccMeanX" 0.22159824394
 2 "LAYING" "tBodyAccMeanX" 0.281373403958333
 3 "LAYING" "tBodyAccMeanX" 0.275516852741935

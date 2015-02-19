@@ -50,7 +50,7 @@ A complete description of the contents of the file can be found in the CodeBook.
 
 This file provides detailed metadata describing the contents of the file, datTidyFinal_HAR.txt
 
-### Is the data Tidy?
+### Is the data tidy?
 
 The data in the file daTidyFinal_HAR.txt is believed to be tidy based on the assertion that:-
 
