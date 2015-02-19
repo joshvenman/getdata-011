@@ -49,12 +49,3 @@ A complete description of the contents of the file can be found in the CodeBook.
 
 This file provides detailed metadata describing the contents of the file, datTidyFinal_HAR.txt
 
-### Understanding these resources
-
-Write the following functions:
-
-
-
-### FAQ
-
-This assignment will be graded via peer assessment.
